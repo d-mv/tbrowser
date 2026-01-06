@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    image: tbrowser:latest
+    # Essential for TUI
+    stdin_open: true
+    tty: true
+    environment:
+      - TERM=xterm-256color
+      - PYTHONUNBUFFERED=1

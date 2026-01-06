@@ -1,0 +1,6 @@
+textual
+httpx
+beautifulsoup4
+markdownify
+Pillow
+textual-image

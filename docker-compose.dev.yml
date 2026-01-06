@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    # These two lines are essential for interactive Terminal apps (TUI)
+    stdin_open: true
+    tty: true
+    environment:
+      - TERM=xterm-256color
+      - PYTHONUNBUFFERED=1
